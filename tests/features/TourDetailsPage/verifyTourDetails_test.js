@@ -11,8 +11,7 @@ Scenario('Navigate to tour details page and assert tour details', async ({ I }) 
 
   let tourNameHomePage = await I.grabTextFrom(homePage.tourName);
 
-  I.click(homePage.viewTourButton);
-  I.switchToNextTab();
+  homePage.clickOnViewTourButton();
  
   let tourNameTourDetailsPage = await I.grabTextFrom(tourDetailsPage.tourName);
 

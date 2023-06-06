@@ -9,9 +9,8 @@ Before(({ I }) => {
 Scenario('Perform a search using valid input and verify search results page', async ({ I }) => {
 
   const searchInput = 'Italy';
-  I.click(headerSectionPage.searchInputField);
-  I.fillField(headerSectionPage.searchInputField, searchInput);
-  I.pressKey('Enter'); 
+  
+  headerSectionPage.performASearchWithSearchCriteria(searchInput);
   I.seeInCurrentUrl(searchInput);
   I.see(searchInput);
 
