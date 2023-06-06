@@ -18,8 +18,8 @@ Scenario('Sort by Total price: Lowest first and ensure that the prices are sorte
     let loPriceSelector = sortAndFilterPage.tourSelector +i+ sortAndFilterPage.priceSelector;
     let hiPriceSelector = sortAndFilterPage.tourSelector +(i+1)+ sortAndFilterPage.priceSelector;
 
-    let loPrice = await I.grabNumberOfVisibleElements(loPriceSelector);
-    let hiPrice = await I.grabNumberOfVisibleElements(hiPriceSelector);
+    let loPrice = await I.grabTextFrom(loPriceSelector);
+    let hiPrice = await I.grabTextFrom(hiPriceSelector);
 
     let result = loPrice <= hiPrice;
 

@@ -15,6 +15,13 @@ exports.config = {
       waitForAction: 700
     }
   },
+  plugins: {
+    testomatio: {
+      enabled: true,
+      require: '@testomatio/reporter/lib/adapter/codecept',
+      apiKey: process.env.TESTOMATIO,
+    }
+  },
   include: {
     I: './steps_file.js', 
     headerSectionPage: './tests/pages/headerSection.page.js',

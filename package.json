@@ -2,5 +2,8 @@
   "dependencies": {
     "codeceptjs": "^3.4.1",
     "puppeteer": "^20.5.0"
+  },
+  "devDependencies": {
+    "@testomatio/reporter": "^0.7.6"
   }
 }

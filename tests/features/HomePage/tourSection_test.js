@@ -6,7 +6,7 @@ Before(({ I }) => {
     I.navigateToHomePage();
   });
 
-Scenario('Validate the presence of the tours section on the home page.', ({ I }) => {
+Scenario('Validate the presence of the tours section on the home page', ({ I }) => {
   I.seeElement(homePage.tourSection);
   I.seeElement(homePage.tourPicture);
   I.seeElement(homePage.tourName);
