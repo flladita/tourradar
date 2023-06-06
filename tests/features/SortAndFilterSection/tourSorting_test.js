@@ -1,13 +1,13 @@
 const { sortAndFilterPage } = inject();
 const assert = require('assert');
 
-Feature('Tour Filtering');
+Feature('Tour Sorting');
 
 Before(({ I }) => {
     I.navigateToHomePage();
   });
 
-Scenario('Sort by Total price: Lowest first', async ({ I }) => {
+Scenario('Sort by Total price: Lowest first and ensure that the prices are sorted correctly', async ({ I }) => {
 
    I.selectOption(sortAndFilterPage.sortContainer,'Total price: Lowest first');
   
