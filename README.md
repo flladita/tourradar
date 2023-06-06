@@ -1,4 +1,4 @@
-# tourradar
+# tourradar assignment
 
 This project contains end to end tests for different areas of Tourradar website. The tests are written with CodeceptJS framework for the purpose of a case study challenge.
 
